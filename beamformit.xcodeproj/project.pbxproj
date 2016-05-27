@@ -140,7 +140,7 @@
 		5FB061281CF821F600BF5DB9 /* sndfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sndfile.h; sourceTree = "<group>"; };
 		5FB061291CF821F600BF5DB9 /* support.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = support.h; sourceTree = "<group>"; };
 		5FB0612A1CF821F600BF5DB9 /* tdoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tdoa.h; sourceTree = "<group>"; };
-		5FB061631CF825A900BF5DB9 /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = beamformit/libsndfile.a; sourceTree = "<group>"; };
+		5FB061631CF825A900BF5DB9 /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = ../libsndfile.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +158,6 @@
 		5FB060D31CF8219E00BF5DB9 = {
 			isa = PBXGroup;
 			children = (
-				5FB061631CF825A900BF5DB9 /* libsndfile.a */,
 				5FB060DE1CF8219F00BF5DB9 /* beamformit */,
 				5FB060DD1CF8219F00BF5DB9 /* Products */,
 			);
@@ -191,6 +190,7 @@
 				5FB060EA1CF821E100BF5DB9 /* parse_options.cc */,
 				5FB060EB1CF821E100BF5DB9 /* support.cc */,
 				5FB060EC1CF821E100BF5DB9 /* tdoa.cc */,
+				5FB061631CF825A900BF5DB9 /* libsndfile.a */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -545,6 +545,7 @@
 				5FB060E51CF8219F00BF5DB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

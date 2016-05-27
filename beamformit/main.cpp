@@ -46,6 +46,27 @@ int main(int argc, char *argv[]) {
      It is instantiated as "config"
      */
     
+//    --scroll_size 250 \
+//    --window_size 500 \
+//    --nbest_amount 4 \
+//    --do_noise_threshold 1 \
+//    --noise_percent 10 \
+//    --trans_weight_multi 25 \
+//    --trans_weight_nbest 25 \
+//    --print_features 1 \
+//    --do_avoid_bad_frames 1 \
+//    --do_compute_reference 1 \
+//    --do_use_uem_file 0 \
+//    --do_adapt_weights 1 \
+//    --do_write_sph_files 1 \
+//    --channels_file ./output/${outName}/channels_file \
+//    --show_id ${outName} \
+//    --result_dir ./output/${outName}
+    
+    //argc = 33;
+    //argv[0]="beamformit";
+    
+    
     //define the config structure
     Configuration config;
     //define the work_files structure

@@ -8,6 +8,62 @@
 
 /* Begin PBXBuildFile section */
 		5FB060E01CF8219F00BF5DB9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060DF1CF8219F00BF5DB9 /* main.cpp */; };
+		5FB0612B1CF823FE00BF5DB9 /* delaysum.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061241CF821F600BF5DB9 /* delaysum.h */; };
+		5FB0612C1CF823FE00BF5DB9 /* fileinout.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061251CF821F600BF5DB9 /* fileinout.h */; };
+		5FB0612D1CF823FE00BF5DB9 /* global.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061261CF821F600BF5DB9 /* global.h */; };
+		5FB0612E1CF823FE00BF5DB9 /* parse_options.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061271CF821F600BF5DB9 /* parse_options.h */; };
+		5FB0612F1CF823FE00BF5DB9 /* sndfile.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061281CF821F600BF5DB9 /* sndfile.h */; };
+		5FB061301CF823FE00BF5DB9 /* support.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061291CF821F600BF5DB9 /* support.h */; };
+		5FB061311CF823FE00BF5DB9 /* tdoa.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB0612A1CF821F600BF5DB9 /* tdoa.h */; };
+		5FB061321CF8240B00BF5DB9 /* delaysum.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060E81CF821E100BF5DB9 /* delaysum.cc */; };
+		5FB061331CF8240B00BF5DB9 /* fileinout.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060E91CF821E100BF5DB9 /* fileinout.cc */; };
+		5FB061341CF8240B00BF5DB9 /* parse_options.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060EA1CF821E100BF5DB9 /* parse_options.cc */; };
+		5FB061351CF8240B00BF5DB9 /* support.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060EB1CF821E100BF5DB9 /* support.cc */; };
+		5FB061361CF8240B00BF5DB9 /* tdoa.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060EC1CF821E100BF5DB9 /* tdoa.cc */; };
+		5FB061371CF8241200BF5DB9 /* Array.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060F31CF821EA00BF5DB9 /* Array.h */; };
+		5FB061381CF8241200BF5DB9 /* Array.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060F41CF821EA00BF5DB9 /* Array.hpp */; };
+		5FB061391CF8241200BF5DB9 /* def.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060F51CF821EA00BF5DB9 /* def.h */; };
+		5FB0613A1CF8241200BF5DB9 /* DynArray.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060F61CF821EA00BF5DB9 /* DynArray.h */; };
+		5FB0613B1CF8241200BF5DB9 /* DynArray.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060F71CF821EA00BF5DB9 /* DynArray.hpp */; };
+		5FB0613C1CF8241200BF5DB9 /* FFTReal.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060F81CF821EA00BF5DB9 /* FFTReal.h */; };
+		5FB0613D1CF8241200BF5DB9 /* FFTReal.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060F91CF821EA00BF5DB9 /* FFTReal.hpp */; };
+		5FB0613E1CF8241200BF5DB9 /* FFTRealFixLen.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060FA1CF821EA00BF5DB9 /* FFTRealFixLen.h */; };
+		5FB0613F1CF8241200BF5DB9 /* FFTRealFixLen.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060FB1CF821EA00BF5DB9 /* FFTRealFixLen.hpp */; };
+		5FB061401CF8241200BF5DB9 /* FFTRealFixLenParam.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060FC1CF821EA00BF5DB9 /* FFTRealFixLenParam.h */; };
+		5FB061411CF8241200BF5DB9 /* FFTRealPassDirect.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060FD1CF821EA00BF5DB9 /* FFTRealPassDirect.h */; };
+		5FB061421CF8241200BF5DB9 /* FFTRealPassDirect.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060FE1CF821EA00BF5DB9 /* FFTRealPassDirect.hpp */; };
+		5FB061431CF8241200BF5DB9 /* FFTRealPassInverse.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB060FF1CF821EA00BF5DB9 /* FFTRealPassInverse.h */; };
+		5FB061441CF8241200BF5DB9 /* FFTRealPassInverse.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061001CF821EA00BF5DB9 /* FFTRealPassInverse.hpp */; };
+		5FB061451CF8241200BF5DB9 /* FFTRealSelect.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061011CF821EA00BF5DB9 /* FFTRealSelect.h */; };
+		5FB061461CF8241200BF5DB9 /* FFTRealSelect.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061021CF821EA00BF5DB9 /* FFTRealSelect.hpp */; };
+		5FB061471CF8241200BF5DB9 /* FFTRealUseTrigo.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061031CF821EA00BF5DB9 /* FFTRealUseTrigo.h */; };
+		5FB061481CF8241200BF5DB9 /* FFTRealUseTrigo.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061041CF821EA00BF5DB9 /* FFTRealUseTrigo.hpp */; };
+		5FB061491CF8241200BF5DB9 /* OscSinCos.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061051CF821EA00BF5DB9 /* OscSinCos.h */; };
+		5FB0614A1CF8241200BF5DB9 /* OscSinCos.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061061CF821EA00BF5DB9 /* OscSinCos.hpp */; };
+		5FB0614B1CF8242400BF5DB9 /* ClockCycleCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB0610D1CF821EA00BF5DB9 /* ClockCycleCounter.cpp */; };
+		5FB0614C1CF8242400BF5DB9 /* ClockCycleCounter.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB0610E1CF821EA00BF5DB9 /* ClockCycleCounter.h */; };
+		5FB0614D1CF8242400BF5DB9 /* ClockCycleCounter.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB0610F1CF821EA00BF5DB9 /* ClockCycleCounter.hpp */; };
+		5FB0614E1CF8242400BF5DB9 /* def.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061101CF821EA00BF5DB9 /* def.h */; };
+		5FB0614F1CF8242400BF5DB9 /* fnc.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061111CF821EA00BF5DB9 /* fnc.h */; };
+		5FB061501CF8242400BF5DB9 /* fnc.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061121CF821EA00BF5DB9 /* fnc.hpp */; };
+		5FB061511CF8242400BF5DB9 /* Int64.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061131CF821EA00BF5DB9 /* Int64.h */; };
+		5FB061521CF8242400BF5DB9 /* StopWatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061141CF821EA00BF5DB9 /* StopWatch.cpp */; };
+		5FB061531CF8242400BF5DB9 /* StopWatch.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061151CF821EA00BF5DB9 /* StopWatch.h */; };
+		5FB061541CF8242400BF5DB9 /* StopWatch.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061161CF821EA00BF5DB9 /* StopWatch.hpp */; };
+		5FB061551CF8242400BF5DB9 /* TestAccuracy.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061171CF821EA00BF5DB9 /* TestAccuracy.h */; };
+		5FB061561CF8242400BF5DB9 /* TestAccuracy.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061181CF821EA00BF5DB9 /* TestAccuracy.hpp */; };
+		5FB061571CF8242400BF5DB9 /* TestHelperFixLen.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061191CF821EA00BF5DB9 /* TestHelperFixLen.h */; };
+		5FB061581CF8242400BF5DB9 /* TestHelperFixLen.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB0611A1CF821EA00BF5DB9 /* TestHelperFixLen.hpp */; };
+		5FB061591CF8242400BF5DB9 /* TestHelperNormal.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB0611B1CF821EA00BF5DB9 /* TestHelperNormal.h */; };
+		5FB0615A1CF8242400BF5DB9 /* TestHelperNormal.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB0611C1CF821EA00BF5DB9 /* TestHelperNormal.hpp */; };
+		5FB0615B1CF8242400BF5DB9 /* TestSpeed.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB0611D1CF821EA00BF5DB9 /* TestSpeed.h */; };
+		5FB0615C1CF8242400BF5DB9 /* TestSpeed.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB0611E1CF821EA00BF5DB9 /* TestSpeed.hpp */; };
+		5FB0615D1CF8242400BF5DB9 /* TestWhiteNoiseGen.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB0611F1CF821EA00BF5DB9 /* TestWhiteNoiseGen.h */; };
+		5FB0615E1CF8242400BF5DB9 /* TestWhiteNoiseGen.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061201CF821EA00BF5DB9 /* TestWhiteNoiseGen.hpp */; };
+		5FB0615F1CF8244D00BF5DB9 /* conf.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061081CF821EA00BF5DB9 /* conf.h */; };
+		5FB061601CF8244D00BF5DB9 /* fnc.h in Sources */ = {isa = PBXBuildFile; fileRef = 5FB061091CF821EA00BF5DB9 /* fnc.h */; };
+		5FB061611CF8244D00BF5DB9 /* fnc.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FB0610A1CF821EA00BF5DB9 /* fnc.hpp */; };
+		5FB061641CF825A900BF5DB9 /* libsndfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB061631CF825A900BF5DB9 /* libsndfile.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +81,66 @@
 /* Begin PBXFileReference section */
 		5FB060DC1CF8219F00BF5DB9 /* beamformit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = beamformit; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB060DF1CF8219F00BF5DB9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5FB060E81CF821E100BF5DB9 /* delaysum.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = delaysum.cc; sourceTree = "<group>"; };
+		5FB060E91CF821E100BF5DB9 /* fileinout.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fileinout.cc; sourceTree = "<group>"; };
+		5FB060EA1CF821E100BF5DB9 /* parse_options.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = parse_options.cc; sourceTree = "<group>"; };
+		5FB060EB1CF821E100BF5DB9 /* support.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = support.cc; sourceTree = "<group>"; };
+		5FB060EC1CF821E100BF5DB9 /* tdoa.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tdoa.cc; sourceTree = "<group>"; };
+		5FB060F01CF821EA00BF5DB9 /* fftreal.pas */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = fftreal.pas; sourceTree = "<group>"; };
+		5FB060F11CF821EA00BF5DB9 /* testapp.dpr */ = {isa = PBXFileReference; lastKnownFileType = text; path = testapp.dpr; sourceTree = "<group>"; };
+		5FB060F31CF821EA00BF5DB9 /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
+		5FB060F41CF821EA00BF5DB9 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		5FB060F51CF821EA00BF5DB9 /* def.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = def.h; sourceTree = "<group>"; };
+		5FB060F61CF821EA00BF5DB9 /* DynArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynArray.h; sourceTree = "<group>"; };
+		5FB060F71CF821EA00BF5DB9 /* DynArray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DynArray.hpp; sourceTree = "<group>"; };
+		5FB060F81CF821EA00BF5DB9 /* FFTReal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFTReal.h; sourceTree = "<group>"; };
+		5FB060F91CF821EA00BF5DB9 /* FFTReal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FFTReal.hpp; sourceTree = "<group>"; };
+		5FB060FA1CF821EA00BF5DB9 /* FFTRealFixLen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFTRealFixLen.h; sourceTree = "<group>"; };
+		5FB060FB1CF821EA00BF5DB9 /* FFTRealFixLen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FFTRealFixLen.hpp; sourceTree = "<group>"; };
+		5FB060FC1CF821EA00BF5DB9 /* FFTRealFixLenParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFTRealFixLenParam.h; sourceTree = "<group>"; };
+		5FB060FD1CF821EA00BF5DB9 /* FFTRealPassDirect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFTRealPassDirect.h; sourceTree = "<group>"; };
+		5FB060FE1CF821EA00BF5DB9 /* FFTRealPassDirect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FFTRealPassDirect.hpp; sourceTree = "<group>"; };
+		5FB060FF1CF821EA00BF5DB9 /* FFTRealPassInverse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFTRealPassInverse.h; sourceTree = "<group>"; };
+		5FB061001CF821EA00BF5DB9 /* FFTRealPassInverse.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FFTRealPassInverse.hpp; sourceTree = "<group>"; };
+		5FB061011CF821EA00BF5DB9 /* FFTRealSelect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFTRealSelect.h; sourceTree = "<group>"; };
+		5FB061021CF821EA00BF5DB9 /* FFTRealSelect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FFTRealSelect.hpp; sourceTree = "<group>"; };
+		5FB061031CF821EA00BF5DB9 /* FFTRealUseTrigo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFTRealUseTrigo.h; sourceTree = "<group>"; };
+		5FB061041CF821EA00BF5DB9 /* FFTRealUseTrigo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FFTRealUseTrigo.hpp; sourceTree = "<group>"; };
+		5FB061051CF821EA00BF5DB9 /* OscSinCos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OscSinCos.h; sourceTree = "<group>"; };
+		5FB061061CF821EA00BF5DB9 /* OscSinCos.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OscSinCos.hpp; sourceTree = "<group>"; };
+		5FB061081CF821EA00BF5DB9 /* conf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		5FB061091CF821EA00BF5DB9 /* fnc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fnc.h; sourceTree = "<group>"; };
+		5FB0610A1CF821EA00BF5DB9 /* fnc.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = fnc.hpp; sourceTree = "<group>"; };
+		5FB0610D1CF821EA00BF5DB9 /* ClockCycleCounter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClockCycleCounter.cpp; sourceTree = "<group>"; };
+		5FB0610E1CF821EA00BF5DB9 /* ClockCycleCounter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockCycleCounter.h; sourceTree = "<group>"; };
+		5FB0610F1CF821EA00BF5DB9 /* ClockCycleCounter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ClockCycleCounter.hpp; sourceTree = "<group>"; };
+		5FB061101CF821EA00BF5DB9 /* def.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = def.h; sourceTree = "<group>"; };
+		5FB061111CF821EA00BF5DB9 /* fnc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fnc.h; sourceTree = "<group>"; };
+		5FB061121CF821EA00BF5DB9 /* fnc.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = fnc.hpp; sourceTree = "<group>"; };
+		5FB061131CF821EA00BF5DB9 /* Int64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Int64.h; sourceTree = "<group>"; };
+		5FB061141CF821EA00BF5DB9 /* StopWatch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StopWatch.cpp; sourceTree = "<group>"; };
+		5FB061151CF821EA00BF5DB9 /* StopWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		5FB061161CF821EA00BF5DB9 /* StopWatch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StopWatch.hpp; sourceTree = "<group>"; };
+		5FB061171CF821EA00BF5DB9 /* TestAccuracy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAccuracy.h; sourceTree = "<group>"; };
+		5FB061181CF821EA00BF5DB9 /* TestAccuracy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestAccuracy.hpp; sourceTree = "<group>"; };
+		5FB061191CF821EA00BF5DB9 /* TestHelperFixLen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHelperFixLen.h; sourceTree = "<group>"; };
+		5FB0611A1CF821EA00BF5DB9 /* TestHelperFixLen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestHelperFixLen.hpp; sourceTree = "<group>"; };
+		5FB0611B1CF821EA00BF5DB9 /* TestHelperNormal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHelperNormal.h; sourceTree = "<group>"; };
+		5FB0611C1CF821EA00BF5DB9 /* TestHelperNormal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestHelperNormal.hpp; sourceTree = "<group>"; };
+		5FB0611D1CF821EA00BF5DB9 /* TestSpeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSpeed.h; sourceTree = "<group>"; };
+		5FB0611E1CF821EA00BF5DB9 /* TestSpeed.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestSpeed.hpp; sourceTree = "<group>"; };
+		5FB0611F1CF821EA00BF5DB9 /* TestWhiteNoiseGen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestWhiteNoiseGen.h; sourceTree = "<group>"; };
+		5FB061201CF821EA00BF5DB9 /* TestWhiteNoiseGen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestWhiteNoiseGen.hpp; sourceTree = "<group>"; };
+		5FB061211CF821EA00BF5DB9 /* license.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		5FB061221CF821EA00BF5DB9 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		5FB061241CF821F600BF5DB9 /* delaysum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = delaysum.h; sourceTree = "<group>"; };
+		5FB061251CF821F600BF5DB9 /* fileinout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fileinout.h; sourceTree = "<group>"; };
+		5FB061261CF821F600BF5DB9 /* global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		5FB061271CF821F600BF5DB9 /* parse_options.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parse_options.h; sourceTree = "<group>"; };
+		5FB061281CF821F600BF5DB9 /* sndfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sndfile.h; sourceTree = "<group>"; };
+		5FB061291CF821F600BF5DB9 /* support.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = support.h; sourceTree = "<group>"; };
+		5FB0612A1CF821F600BF5DB9 /* tdoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tdoa.h; sourceTree = "<group>"; };
+		5FB061631CF825A900BF5DB9 /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = beamformit/libsndfile.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB061641CF825A900BF5DB9 /* libsndfile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +158,7 @@
 		5FB060D31CF8219E00BF5DB9 = {
 			isa = PBXGroup;
 			children = (
+				5FB061631CF825A900BF5DB9 /* libsndfile.a */,
 				5FB060DE1CF8219F00BF5DB9 /* beamformit */,
 				5FB060DD1CF8219F00BF5DB9 /* Products */,
 			);
@@ -58,8 +176,131 @@
 			isa = PBXGroup;
 			children = (
 				5FB060DF1CF8219F00BF5DB9 /* main.cpp */,
+				5FB061231CF821F600BF5DB9 /* includes */,
+				5FB060ED1CF821EA00BF5DB9 /* external */,
+				5FB060E61CF821E100BF5DB9 /* src */,
 			);
 			path = beamformit;
+			sourceTree = "<group>";
+		};
+		5FB060E61CF821E100BF5DB9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5FB060E81CF821E100BF5DB9 /* delaysum.cc */,
+				5FB060E91CF821E100BF5DB9 /* fileinout.cc */,
+				5FB060EA1CF821E100BF5DB9 /* parse_options.cc */,
+				5FB060EB1CF821E100BF5DB9 /* support.cc */,
+				5FB060EC1CF821E100BF5DB9 /* tdoa.cc */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		5FB060ED1CF821EA00BF5DB9 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				5FB060EE1CF821EA00BF5DB9 /* FFTReal-2.11 */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		5FB060EE1CF821EA00BF5DB9 /* FFTReal-2.11 */ = {
+			isa = PBXGroup;
+			children = (
+				5FB060EF1CF821EA00BF5DB9 /* delphi */,
+				5FB060F21CF821EA00BF5DB9 /* ffft */,
+				5FB061211CF821EA00BF5DB9 /* license.txt */,
+				5FB061221CF821EA00BF5DB9 /* readme.txt */,
+			);
+			path = "FFTReal-2.11";
+			sourceTree = "<group>";
+		};
+		5FB060EF1CF821EA00BF5DB9 /* delphi */ = {
+			isa = PBXGroup;
+			children = (
+				5FB060F01CF821EA00BF5DB9 /* fftreal.pas */,
+				5FB060F11CF821EA00BF5DB9 /* testapp.dpr */,
+			);
+			path = delphi;
+			sourceTree = "<group>";
+		};
+		5FB060F21CF821EA00BF5DB9 /* ffft */ = {
+			isa = PBXGroup;
+			children = (
+				5FB060F31CF821EA00BF5DB9 /* Array.h */,
+				5FB060F41CF821EA00BF5DB9 /* Array.hpp */,
+				5FB060F51CF821EA00BF5DB9 /* def.h */,
+				5FB060F61CF821EA00BF5DB9 /* DynArray.h */,
+				5FB060F71CF821EA00BF5DB9 /* DynArray.hpp */,
+				5FB060F81CF821EA00BF5DB9 /* FFTReal.h */,
+				5FB060F91CF821EA00BF5DB9 /* FFTReal.hpp */,
+				5FB060FA1CF821EA00BF5DB9 /* FFTRealFixLen.h */,
+				5FB060FB1CF821EA00BF5DB9 /* FFTRealFixLen.hpp */,
+				5FB060FC1CF821EA00BF5DB9 /* FFTRealFixLenParam.h */,
+				5FB060FD1CF821EA00BF5DB9 /* FFTRealPassDirect.h */,
+				5FB060FE1CF821EA00BF5DB9 /* FFTRealPassDirect.hpp */,
+				5FB060FF1CF821EA00BF5DB9 /* FFTRealPassInverse.h */,
+				5FB061001CF821EA00BF5DB9 /* FFTRealPassInverse.hpp */,
+				5FB061011CF821EA00BF5DB9 /* FFTRealSelect.h */,
+				5FB061021CF821EA00BF5DB9 /* FFTRealSelect.hpp */,
+				5FB061031CF821EA00BF5DB9 /* FFTRealUseTrigo.h */,
+				5FB061041CF821EA00BF5DB9 /* FFTRealUseTrigo.hpp */,
+				5FB061051CF821EA00BF5DB9 /* OscSinCos.h */,
+				5FB061061CF821EA00BF5DB9 /* OscSinCos.hpp */,
+				5FB061071CF821EA00BF5DB9 /* test */,
+			);
+			path = ffft;
+			sourceTree = "<group>";
+		};
+		5FB061071CF821EA00BF5DB9 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				5FB061081CF821EA00BF5DB9 /* conf.h */,
+				5FB061091CF821EA00BF5DB9 /* fnc.h */,
+				5FB0610A1CF821EA00BF5DB9 /* fnc.hpp */,
+				5FB0610C1CF821EA00BF5DB9 /* stopwatch */,
+				5FB061171CF821EA00BF5DB9 /* TestAccuracy.h */,
+				5FB061181CF821EA00BF5DB9 /* TestAccuracy.hpp */,
+				5FB061191CF821EA00BF5DB9 /* TestHelperFixLen.h */,
+				5FB0611A1CF821EA00BF5DB9 /* TestHelperFixLen.hpp */,
+				5FB0611B1CF821EA00BF5DB9 /* TestHelperNormal.h */,
+				5FB0611C1CF821EA00BF5DB9 /* TestHelperNormal.hpp */,
+				5FB0611D1CF821EA00BF5DB9 /* TestSpeed.h */,
+				5FB0611E1CF821EA00BF5DB9 /* TestSpeed.hpp */,
+				5FB0611F1CF821EA00BF5DB9 /* TestWhiteNoiseGen.h */,
+				5FB061201CF821EA00BF5DB9 /* TestWhiteNoiseGen.hpp */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		5FB0610C1CF821EA00BF5DB9 /* stopwatch */ = {
+			isa = PBXGroup;
+			children = (
+				5FB0610D1CF821EA00BF5DB9 /* ClockCycleCounter.cpp */,
+				5FB0610E1CF821EA00BF5DB9 /* ClockCycleCounter.h */,
+				5FB0610F1CF821EA00BF5DB9 /* ClockCycleCounter.hpp */,
+				5FB061101CF821EA00BF5DB9 /* def.h */,
+				5FB061111CF821EA00BF5DB9 /* fnc.h */,
+				5FB061121CF821EA00BF5DB9 /* fnc.hpp */,
+				5FB061131CF821EA00BF5DB9 /* Int64.h */,
+				5FB061141CF821EA00BF5DB9 /* StopWatch.cpp */,
+				5FB061151CF821EA00BF5DB9 /* StopWatch.h */,
+				5FB061161CF821EA00BF5DB9 /* StopWatch.hpp */,
+			);
+			path = stopwatch;
+			sourceTree = "<group>";
+		};
+		5FB061231CF821F600BF5DB9 /* includes */ = {
+			isa = PBXGroup;
+			children = (
+				5FB061241CF821F600BF5DB9 /* delaysum.h */,
+				5FB061251CF821F600BF5DB9 /* fileinout.h */,
+				5FB061261CF821F600BF5DB9 /* global.h */,
+				5FB061271CF821F600BF5DB9 /* parse_options.h */,
+				5FB061281CF821F600BF5DB9 /* sndfile.h */,
+				5FB061291CF821F600BF5DB9 /* support.h */,
+				5FB0612A1CF821F600BF5DB9 /* tdoa.h */,
+			);
+			path = includes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +359,61 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB0615F1CF8244D00BF5DB9 /* conf.h in Sources */,
+				5FB061601CF8244D00BF5DB9 /* fnc.h in Sources */,
+				5FB061611CF8244D00BF5DB9 /* fnc.hpp in Sources */,
+				5FB0614B1CF8242400BF5DB9 /* ClockCycleCounter.cpp in Sources */,
+				5FB0614C1CF8242400BF5DB9 /* ClockCycleCounter.h in Sources */,
+				5FB0614D1CF8242400BF5DB9 /* ClockCycleCounter.hpp in Sources */,
+				5FB0614E1CF8242400BF5DB9 /* def.h in Sources */,
+				5FB0614F1CF8242400BF5DB9 /* fnc.h in Sources */,
+				5FB061501CF8242400BF5DB9 /* fnc.hpp in Sources */,
+				5FB061511CF8242400BF5DB9 /* Int64.h in Sources */,
+				5FB061521CF8242400BF5DB9 /* StopWatch.cpp in Sources */,
+				5FB061531CF8242400BF5DB9 /* StopWatch.h in Sources */,
+				5FB061541CF8242400BF5DB9 /* StopWatch.hpp in Sources */,
+				5FB061551CF8242400BF5DB9 /* TestAccuracy.h in Sources */,
+				5FB061561CF8242400BF5DB9 /* TestAccuracy.hpp in Sources */,
+				5FB061571CF8242400BF5DB9 /* TestHelperFixLen.h in Sources */,
+				5FB061581CF8242400BF5DB9 /* TestHelperFixLen.hpp in Sources */,
+				5FB061591CF8242400BF5DB9 /* TestHelperNormal.h in Sources */,
+				5FB0615A1CF8242400BF5DB9 /* TestHelperNormal.hpp in Sources */,
+				5FB0615B1CF8242400BF5DB9 /* TestSpeed.h in Sources */,
+				5FB0615C1CF8242400BF5DB9 /* TestSpeed.hpp in Sources */,
+				5FB0615D1CF8242400BF5DB9 /* TestWhiteNoiseGen.h in Sources */,
+				5FB0615E1CF8242400BF5DB9 /* TestWhiteNoiseGen.hpp in Sources */,
+				5FB061371CF8241200BF5DB9 /* Array.h in Sources */,
+				5FB061381CF8241200BF5DB9 /* Array.hpp in Sources */,
+				5FB061391CF8241200BF5DB9 /* def.h in Sources */,
+				5FB0613A1CF8241200BF5DB9 /* DynArray.h in Sources */,
+				5FB0613B1CF8241200BF5DB9 /* DynArray.hpp in Sources */,
+				5FB0613C1CF8241200BF5DB9 /* FFTReal.h in Sources */,
+				5FB0613D1CF8241200BF5DB9 /* FFTReal.hpp in Sources */,
+				5FB0613E1CF8241200BF5DB9 /* FFTRealFixLen.h in Sources */,
+				5FB0613F1CF8241200BF5DB9 /* FFTRealFixLen.hpp in Sources */,
+				5FB061401CF8241200BF5DB9 /* FFTRealFixLenParam.h in Sources */,
+				5FB061411CF8241200BF5DB9 /* FFTRealPassDirect.h in Sources */,
+				5FB061421CF8241200BF5DB9 /* FFTRealPassDirect.hpp in Sources */,
+				5FB061431CF8241200BF5DB9 /* FFTRealPassInverse.h in Sources */,
+				5FB061441CF8241200BF5DB9 /* FFTRealPassInverse.hpp in Sources */,
+				5FB061451CF8241200BF5DB9 /* FFTRealSelect.h in Sources */,
+				5FB061461CF8241200BF5DB9 /* FFTRealSelect.hpp in Sources */,
+				5FB061471CF8241200BF5DB9 /* FFTRealUseTrigo.h in Sources */,
+				5FB061481CF8241200BF5DB9 /* FFTRealUseTrigo.hpp in Sources */,
+				5FB061491CF8241200BF5DB9 /* OscSinCos.h in Sources */,
+				5FB0614A1CF8241200BF5DB9 /* OscSinCos.hpp in Sources */,
+				5FB061321CF8240B00BF5DB9 /* delaysum.cc in Sources */,
+				5FB061331CF8240B00BF5DB9 /* fileinout.cc in Sources */,
+				5FB061341CF8240B00BF5DB9 /* parse_options.cc in Sources */,
+				5FB061351CF8240B00BF5DB9 /* support.cc in Sources */,
+				5FB061361CF8240B00BF5DB9 /* tdoa.cc in Sources */,
+				5FB0612B1CF823FE00BF5DB9 /* delaysum.h in Sources */,
+				5FB0612C1CF823FE00BF5DB9 /* fileinout.h in Sources */,
+				5FB0612D1CF823FE00BF5DB9 /* global.h in Sources */,
+				5FB0612E1CF823FE00BF5DB9 /* parse_options.h in Sources */,
+				5FB0612F1CF823FE00BF5DB9 /* sndfile.h in Sources */,
+				5FB061301CF823FE00BF5DB9 /* support.h in Sources */,
+				5FB061311CF823FE00BF5DB9 /* tdoa.h in Sources */,
 				5FB060E01CF8219F00BF5DB9 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,14 +505,24 @@
 		5FB060E41CF8219F00BF5DB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/beamformit",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
 		5FB060E51CF8219F00BF5DB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/beamformit",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;
 		};

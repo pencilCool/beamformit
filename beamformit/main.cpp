@@ -131,21 +131,8 @@ int main(int argc, char *argv[]) {
     }
     //tdoa.set_UEMGap(ds.get_UEMGap());
     
-    //////////////Special test function: write out the residual between two files/////////////
-    if(config.DO_OUTPUT_RESIDUAL)
-    {
-        log.print_this("Computing the residual between two signals\n",2);
-        ds.computeChannelsDifference();
-        fileInOut.Close_Channels();
-        exit(0);
-    }
-    
-    //////////we compute the skew between signals ////////////
-    if(config.DO_COMPUTE_SKEW)
-    {
-        log.print_this("Computing the skew between input signals",2);
-        ds.compute_skew();
-    }
+
+
     
     ////////// Initialize the structures to keep all the info, needs to be in the order delaysum + tdoa////////
     log.print_this("Initializing...",2);
@@ -160,6 +147,9 @@ int main(int argc, char *argv[]) {
     log.print_this("Setting the reference channel\n",2);
     //compute the Xcorr's and select the best one for the reference
     char tmp_data[512];
+  
+    //FIXME:
+    config.COMPUTE_REFERENCE = 0 ;
     switch(config.COMPUTE_REFERENCE)
     {
         case 0:

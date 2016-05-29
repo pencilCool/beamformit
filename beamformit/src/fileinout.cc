@@ -441,6 +441,7 @@ void FileInOut::Open_Output_Channels()
 
     switch((*m_config).OUT_FORMAT)
     {
+            
     case 0:
         //use the same format as the input
         file_info.format = file_input_info.format;

@@ -108,6 +108,7 @@ int main(int argc, char *argv[]) {
     int numChannels = fileInOut.Open_Input_Channels();
     printf("NumChannels is: %d, sampling rate is %ld\n", numChannels, fileInOut.get_sampleRate());fflush(stdout);
     log.print_this("Opening output channels\n",2);
+#pragma mark open output channels
     fileInOut.Open_Output_Channels();
     
     ///////////set show-specific parameters///////////////////
@@ -125,6 +126,7 @@ int main(int argc, char *argv[]) {
     }
     else
     {
+#pragma mark - without UEM file
         ds.set_UEMGap(0);
     }
     //tdoa.set_UEMGap(ds.get_UEMGap());
@@ -147,7 +149,9 @@ int main(int argc, char *argv[]) {
     
     ////////// Initialize the structures to keep all the info, needs to be in the order delaysum + tdoa////////
     log.print_this("Initializing...",2);
+#pragma mark - DelaySum object init
     ds.init();
+#pragma mark - tdoa init
     tdoa.init(numChannels, ds.get_UEMGap());
     log.print_this("finished\n",2);
     
@@ -176,6 +180,7 @@ int main(int argc, char *argv[]) {
             sprintf(tmp_data, "Selected channel %d as the reference channel\n", config.reference_channel);
             log.print_this(tmp_data, 2);
             break;
+#pragma mark - select best reference channel
         case 2:
             //reference cannel set dynamically thoughout the meting
             config.reference_channel = ds.find_best_channel_xcorr_adapt();
@@ -192,11 +197,13 @@ int main(int argc, char *argv[]) {
     /// The scaling factor ensures that the dynamic range of the signal fits
     /// optimally into the allocated bytes reserved for it at output
     log.print_this("Computing the scalling factor for the output signal\n",2);
+#pragma mark - scalling factor
     ds.compute_scalling_factor();
     log.print_this("Finished computation of the scalling factor\n",2);
     
     ////////////////select the initial channel weights//////////////
     log.print_this("Setting initial Channel Weights...",2);
+#pragma mark - set channel weight
     ds.Set_Channels_Weights();
     log.print_this("finished",2);
     
@@ -204,7 +211,7 @@ int main(int argc, char *argv[]) {
     //////////////////////////////////////////////////////////////////////////////////////////
     //////           TDOA PROCESSING
     //////////////////////////////////////////////////////////////////////////////////////////
-    
+#pragma mark - TDOA Processing
     long counter=0;
     long start_frame;
     
@@ -216,7 +223,7 @@ int main(int argc, char *argv[]) {
     
     /// We compute the N-best TDOA values for each analysis window across the whole recording
     float percent_printed = 0; //percentage printed last
-    printf("toda.get_totalNumDelays = %d",tdoa.get_totalNumDelays());
+    printf("\n toda.get_totalNumDelays = %d\n",tdoa.get_totalNumDelays());
     while(counter < tdoa.get_totalNumDelays())
     {
         //we set the start point for the data
@@ -238,6 +245,7 @@ int main(int argc, char *argv[]) {
         }
         
         //compute the TDOA values
+#pragma mark ds compute tdoa value
         ds.computeTDOAValues(start_frame, counter);
         counter++;
     }

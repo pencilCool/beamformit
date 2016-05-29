@@ -80,7 +80,7 @@
 
 /* Begin PBXFileReference section */
 		5FB060DC1CF8219F00BF5DB9 /* beamformit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = beamformit; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FB060DF1CF8219F00BF5DB9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5FB060DF1CF8219F00BF5DB9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = "<group>"; };
 		5FB060E81CF821E100BF5DB9 /* delaysum.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = delaysum.cc; sourceTree = "<group>"; };
 		5FB060E91CF821E100BF5DB9 /* fileinout.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fileinout.cc; sourceTree = "<group>"; };
 		5FB060EA1CF821E100BF5DB9 /* parse_options.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = parse_options.cc; sourceTree = "<group>"; };
@@ -174,7 +174,6 @@
 		5FB060DE1CF8219F00BF5DB9 /* beamformit */ = {
 			isa = PBXGroup;
 			children = (
-				5FB060DF1CF8219F00BF5DB9 /* main.cpp */,
 				5FB061231CF821F600BF5DB9 /* includes */,
 				5FB060ED1CF821EA00BF5DB9 /* external */,
 				5FB060E61CF821E100BF5DB9 /* src */,
@@ -185,6 +184,7 @@
 		5FB060E61CF821E100BF5DB9 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				5FB060DF1CF8219F00BF5DB9 /* main.cpp */,
 				5FB060E81CF821E100BF5DB9 /* delaysum.cc */,
 				5FB060E91CF821E100BF5DB9 /* fileinout.cc */,
 				5FB060EA1CF821E100BF5DB9 /* parse_options.cc */,
